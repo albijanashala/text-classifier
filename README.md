@@ -10,7 +10,7 @@ Qellimi eshte te trajnohet nje model qe klasifikon tekstet si **Human-written** 
 ## Dataset
 
 Dataset-i eshte marre nga Kaggle:  
- [AI vs Human Text Dataset](https://www.kaggle.com/datasets/shubhendra/ai-vs-human-text)
+ [AI vs Human Text Dataset]https://www.kaggle.com/datasets/pratyushpuri/ai-vs-human-content-detection-1000-record-in-2025/data
 
 - Numri i mostrave: **1367**
 - Kategori: **0 = Human**, **1 = AI**
@@ -73,7 +73,6 @@ POST /predict → pranon nje tekst dhe kthen prediction + probabilitetet
 Swagger UI → http://127.0.0.1:8000/docs
 
 ## Si te ekzekutohet projekti
-1. Klono ose kopjo projektin
 ```bash
 
 git clone <repo-url>
