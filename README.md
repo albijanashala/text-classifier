@@ -22,7 +22,7 @@ Dataset-i eshte marre nga Kaggle:
 
 ## Hapat e Implementimit
 
-### 1. Data Preparation
+###  Data Preparation
 - Heqja e rreshtave me vlera `NaN` në `text_content`.
 - Heqja e duplikatëve.
 - Zevendesimi i vlerave mungese ne kolonat numerike me **mesatare**.
@@ -32,13 +32,13 @@ Dataset-i eshte marre nga Kaggle:
   - Heqje stopwords
 - Krijimi i kolones `clean_text`.
 
-### 2. Exploratory Data Analysis (EDA)
+###  Exploratory Data Analysis (EDA)
 - Numri i mostrave per kategori.
 - Vizualizimi i fjaleve me te shpeshta.
 - Korrelacioni midis variablave numerike dhe label-it.
 - Heatmap per matricen e korrelacionit.
 
-### 3. Model Training
+###  Model Training
 - Dataset-i u nda ne **train (80%)** dhe **test (20%)**.
 - Teksti u transformua me **TF-IDF Vectorizer (max_features=5000)**.
 - U trajnuan 4 modele:
@@ -52,11 +52,11 @@ Dataset-i eshte marre nga Kaggle:
   - **Recall**
   - **F1-score**
 
-### 4. Krahasimi i Modeleve
+###  Krahasimi i Modeleve
 - Rezultatet u shfaqen ne nje tabele dhe bar chart.
 - **Modeli me i mire sipas F1-score:** Logistic Regression (balanced) (~0.53).
 
-### 5. Prediction Script
+###  Prediction Script
 - Funksioni `predict_sentence(text)` kthen:
   ```json
   {
@@ -79,7 +79,7 @@ git clone <repo-url>
 cd text-classifier
 
 ```
-2.  Krijo virtual environment (opsional, por e rekomanduar)
+  Krijo virtual environment (opsional, por e rekomanduar)
 ```bash
 
 python -m venv .venv
@@ -88,17 +88,17 @@ source .venv/bin/activate  # Linux/Mac
 
 ```
 
-3. Instalo kerkesat
+ Instalo kerkesat
 ```bash
 
 pip install -r requirements.txt
 
 ```
 
-4. Ekzekuto notebook-un
+ Ekzekuto notebook-un
 Hap analysis.ipynb në Jupyter/VS Code dhe ekzekuto qelizat.
 
-5. Nis API-në
+ Nis API-në
 ```bash
 
 uvicorn app:app --reload
